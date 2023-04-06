@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="app">
       <div className="logo">
-        <img src={logo} width={70} height={70} />
+        <img src={logo} width={70} height={70} alt='' />
         <h2>Moti</h2>
 
       </div>
@@ -48,7 +48,7 @@ function App() {
           </div>
         </div>
 
-        {data.name != undefined &&
+        {data.name !== undefined &&
           <div className="bottom">
             <div className="feels">
               {data.main ? <p className="bold"> {data.main.pressure} hPa</p> : null}
